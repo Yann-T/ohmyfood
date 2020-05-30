@@ -1,0 +1,18 @@
+@mixin background($color: $color-primary){
+    background: $color;
+}
+
+@mixin text_yellow{
+    text-align: center;
+    color: $color-secondary;
+}
+
+@mixin border_round{
+    border-radius: 5em;
+}
+
+@mixin btn{
+    margin: auto;
+    width: auto;
+
+}

@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  font-size: 100%;
+}
+
+body {
+  width: auto;
+}
+
+header {
+  font-size: 3.5em;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.background {
+  background: #569c87;
+}
+
+.text_yellow {
+  text-align: center;
+  color: #fcca46;
+}
+
+.soon {
+  margin: 20%;
+  border-radius: 5em;
+}
+
+/*# sourceMappingURL=style.css.map */

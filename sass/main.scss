@@ -1,0 +1,36 @@
+@import "../utils/_variables.scss";
+@import "../base/_base.scss";
+
+*{
+    margin: 0;
+    font-size: 100%;
+}
+body{
+    width: auto;
+}
+
+header{
+    font-size: 3.5em;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.background{
+
+    @include background
+
+}
+
+.text_yellow{
+    
+    @include text_yellow
+}
+
+
+.soon{
+    @include btn;
+    @include border_round;
+}
