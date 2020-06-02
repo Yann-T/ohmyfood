@@ -1,10 +1,12 @@
 * {
+  padding: 0;
   margin: 0;
   font-size: 100%;
 }
 
 body {
-  width: auto;
+  width: 100%;
+  margin: auto;
 }
 
 header {
@@ -14,6 +16,10 @@ header {
 footer {
   position: fixed;
   bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-content: space-around;
   width: 100%;
 }
 
@@ -27,8 +33,34 @@ footer {
 }
 
 .soon {
-  margin: 20%;
+  height: 1rem;
+  width: 10%;
   border-radius: 5em;
+}
+
+.skeleton {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  width: 60%;
+  height: 900px;
+  margin: auto;
+  padding: 5% 0;
+}
+
+.menu {
+  border: solid 1px black;
+  width: 35%;
+  height: 450px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  vertical-align: middle;
+  margin: 2% 3%;
 }
 
 /*# sourceMappingURL=style.css.map */

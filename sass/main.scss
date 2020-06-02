@@ -2,11 +2,13 @@
 @import "../base/_base.scss";
 
 *{
+    padding: 0;
     margin: 0;
     font-size: 100%;
 }
 body{
-    width: auto;
+    width: 100%;
+    margin: auto;
 }
 
 header{
@@ -17,6 +19,7 @@ footer{
     position: fixed;
     bottom: 0;
     width: 100%;
+    @include display_sp_around;
 }
 .background{
 
@@ -34,3 +37,12 @@ footer{
     @include btn;
     @include border_round;
 }
+
+.skeleton{
+    @include skeleton;
+}
+
+.menu{
+    @include menu;
+}
+
