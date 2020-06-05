@@ -16,10 +16,10 @@ header{
 }
 
 footer{
+    width: 100%;
     position: fixed;
     bottom: 0;
-    width: 100%;
-    @include display_sp_around;
+    @include display_sp_bt;
 }
 .background{
 
@@ -27,12 +27,24 @@ footer{
 
 }
 
-.text_yellow{
+.text--yellow{
     
-    @include text_yellow
+    @include text--yellow
 }
 
+ul li{
+    list-style: none;
+}
 
+.m_left{
+    margin-left: 5px;
+}
+.m_right{
+    margin-right: 5px;
+}
+.bold{
+    @include text--bold;
+}
 .soon{
     @include btn;
     @include border_round;
@@ -42,7 +54,24 @@ footer{
     @include skeleton;
 }
 
-.menu{
-    @include menu;
+.preview{
+    @include preview;
+
 }
 
+.menu{
+
+    display: flex;
+
+
+    &_col{
+        @extend .menu;
+        flex-direction: column;
+        align-items: center;
+        margin: 5% 0;
+    }; 
+    &_header{
+        @extend .menu;
+        margin: 3rem 0;
+    };
+}
