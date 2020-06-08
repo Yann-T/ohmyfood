@@ -108,6 +108,7 @@ ul li {
 }
 .menu_header {
   margin: 3rem 0;
+  justify-self: center;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -86,5 +86,6 @@ ul li{
     &_header{
         @extend .menu;
         margin: 3rem 0;
+        justify-self: center;
     };
 }
