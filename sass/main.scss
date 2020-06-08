@@ -1,11 +1,13 @@
 @import "../utils/_variables.scss";
 @import "../base/_base.scss";
 
+/*Retrait de marge interne à la page*/
 *{
     padding: 0;
     margin: 0;
     font-size: 100%;
 }
+
 body{
     width: 100%;
     margin: auto;
@@ -15,25 +17,12 @@ header{
     font-size: 3.5em;
 }
 
+/*Position fixe du footer et ajout de marge pour une meilleure visibilité sur la page*/
 footer{
     width: 100%;
     position: fixed;
     bottom: 0;
     @include display_sp_bt;
-}
-.background{
-
-    @include background
-
-}
-
-.text--yellow{
-    
-    @include text--yellow
-}
-
-ul li{
-    list-style: none;
 }
 
 .m_left{
@@ -42,28 +31,52 @@ ul li{
 .m_right{
     margin-right: 5px;
 }
+
+/*Mixin avec argument (couleur principale)*/
+.background{
+
+    @include background
+
+}
+
+/*Mixin pour centrer si besoin et changer la couleur du texte (couleur secondaire)*/
+.text--yellow{
+    
+    @include text--yellow
+}
+
+/*Retrait des puces des listes*/
+ul li{
+    list-style: none;
+}
+
+/*Classe intégrant un Mixin de retrait des décorations de texte et augmentation (1.3 rem) de la taille de la police*/
 .bold{
     @include text--bold;
 }
+
+/*Classe intégrant un mixin pour la mise en page du bouton prochainement et un mixin pour arrondir les bords*/
 .soon{
     @include btn;
     @include border_round;
 }
 
+/*Classe intégrant un mixin -- flexbox pour la mise en page des previews*/
 .skeleton{
     @include skeleton;
 }
 
+/*Classe intégrant un mixin pour la mise en page interne des previews des menus*/
 .preview{
     @include preview;
 
 }
 
+/*Classe modifiant l'affichage des menus et des headers sur chaque page*/
 .menu{
 
-    display: flex;
-
-
+    display: flex;  
+    margin: auto;
     &_col{
         @extend .menu;
         flex-direction: column;

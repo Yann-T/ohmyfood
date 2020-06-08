@@ -1,3 +1,5 @@
+@charset "UTF-8";
+/*Retrait de marge interne à la page*/
 * {
   padding: 0;
   margin: 0;
@@ -13,6 +15,7 @@ header {
   font-size: 3.5em;
 }
 
+/*Position fixe du footer et ajout de marge pour une meilleure visibilité sur la page*/
 footer {
   width: 100%;
   position: fixed;
@@ -23,19 +26,6 @@ footer {
   justify-content: space-between;
 }
 
-.background {
-  background: #569c87;
-}
-
-.text--yellow {
-  text-align: center;
-  color: #fcca46;
-}
-
-ul li {
-  list-style: none;
-}
-
 .m_left {
   margin-left: 5px;
 }
@@ -44,12 +34,30 @@ ul li {
   margin-right: 5px;
 }
 
+/*Mixin avec argument (couleur principale)*/
+.background {
+  background: #569c87;
+}
+
+/*Mixin pour centrer si besoin et changer la couleur du texte (couleur secondaire)*/
+.text--yellow {
+  text-align: center;
+  color: #fcca46;
+}
+
+/*Retrait des puces des listes*/
+ul li {
+  list-style: none;
+}
+
+/*Classe intégrant un Mixin de retrait des décorations de texte et augmentation (1.3 rem) de la taille de la police*/
 .bold {
   font-weight: bold;
   font-size: 1.3rem;
   text-decoration: none;
 }
 
+/*Classe intégrant un mixin pour la mise en page du bouton prochainement et un mixin pour arrondir les bords*/
 .soon {
   height: 2rem;
   width: 10%;
@@ -61,6 +69,7 @@ ul li {
   border-radius: 5px;
 }
 
+/*Classe intégrant un mixin -- flexbox pour la mise en page des previews*/
 .skeleton {
   display: flex;
   flex-direction: row;
@@ -73,6 +82,7 @@ ul li {
   padding: 5% 0;
 }
 
+/*Classe intégrant un mixin pour la mise en page interne des previews des menus*/
 .preview {
   border: solid 1px black;
   width: 35%;
@@ -86,8 +96,10 @@ ul li {
   margin: 2% 3%;
 }
 
+/*Classe modifiant l'affichage des menus et des headers sur chaque page*/
 .menu, .menu_header, .menu_col {
   display: flex;
+  margin: auto;
 }
 .menu_col {
   flex-direction: column;
