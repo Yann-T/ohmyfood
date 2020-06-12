@@ -1,9 +1,14 @@
 @charset "UTF-8";
+/*Import des variables*/
+/*Import des mixin*/
+/*Import des polices*/
+@font-face {
+  font-family: "lne";
+  src: url("./vendors/Fonts/devonshire-regular.ttf") format("truetype");
+}
 /*Retrait de marge interne à la page*/
 * {
-  padding: 0;
   margin: 0;
-  font-size: 100%;
 }
 
 body {
@@ -60,7 +65,7 @@ ul li {
 /*Classe intégrant un mixin pour la mise en page du bouton prochainement et un mixin pour arrondir les bords*/
 .soon {
   height: 2rem;
-  width: 10%;
+  width: 200px;
   margin-bottom: 150px;
   margin-left: auto;
   margin-right: auto;
@@ -81,6 +86,12 @@ ul li {
   margin: auto;
   padding: 5% 0;
 }
+@media screen and (max-width: 799px) {
+  .skeleton {
+    display: flex;
+    flex-direction: column;
+  }
+}
 
 /*Classe intégrant un mixin pour la mise en page interne des previews des menus*/
 .preview {
@@ -91,8 +102,6 @@ ul li {
   display: flex;
   justify-content: center;
   align-items: center;
-  align-content: center;
-  vertical-align: middle;
   margin: 2% 3%;
 }
 
@@ -104,11 +113,18 @@ ul li {
 .menu_col {
   flex-direction: column;
   align-items: center;
-  margin: 5% 0;
+  margin: 5% auto;
+  width: 600px;
+  min-width: 600px;
 }
 .menu_header {
-  margin: 3rem 0;
-  justify-self: center;
+  margin: 5% auto;
+  justify-content: space-around;
+}
+.menu_lne {
+  background: #fcdfdb;
+  font-family: "lne";
+  font-size: 2rem;
 }
 
 /*# sourceMappingURL=style.css.map */

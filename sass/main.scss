@@ -1,11 +1,16 @@
+/*Import des variables*/
 @import "../utils/_variables.scss";
+
+/*Import des mixin*/
 @import "../base/_base.scss";
+
+/*Import des polices*/
+@import "../vendors/_fonts.scss";
+
 
 /*Retrait de marge interne à la page*/
 *{
-    padding: 0;
     margin: 0;
-    font-size: 100%;
 }
 
 body{
@@ -64,6 +69,7 @@ ul li{
 /*Classe intégrant un mixin -- flexbox pour la mise en page des previews*/
 .skeleton{
     @include skeleton;
+    @include mobile;
 }
 
 /*Classe intégrant un mixin pour la mise en page interne des previews des menus*/
@@ -77,15 +83,27 @@ ul li{
 
     display: flex;  
     margin: auto;
+
     &_col{
         @extend .menu;
         flex-direction: column;
         align-items: center;
-        margin: 5% 0;
+        margin: 5% auto;
+        width: 600px;
+        min-width: 600px;
     }; 
+
     &_header{
         @extend .menu;
-        margin: 3rem 0;
-        justify-self: center;
+        margin: 5% auto;
+        justify-content: space-around;
+    };
+
+    &_lne{
+
+        @include background ($color: #fcdfdb);
+        font-family: 'lne';
+        font-size: 2rem;
     };
 }
+
