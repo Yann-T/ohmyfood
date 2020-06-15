@@ -6,6 +6,18 @@
   font-family: "lne";
   src: url("./vendors/Fonts/devonshire-regular.ttf") format("truetype");
 }
+@font-face {
+  font-family: "lcalf";
+  src: url("./vendors/Fonts/croissantone-regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "lddp";
+  src: url("./vendors/Fonts/authentic-ratatouille.otf") format("opentype");
+}
+@font-face {
+  font-family: "lpdg";
+  src: url("./vendors/Fonts/kalam-bold.ttf") format("truetype");
+}
 /*Retrait de marge interne à la page*/
 * {
   margin: 0;
@@ -103,6 +115,7 @@ ul li {
   justify-content: center;
   align-items: center;
   margin: 2% 3%;
+  font-size: 2rem;
 }
 
 /*Classe modifiant l'affichage des menus et des headers sur chaque page*/
@@ -124,7 +137,15 @@ ul li {
 .menu_lne {
   background: #fcdfdb;
   font-family: "lne";
-  font-size: 2rem;
+}
+.menu_lcalf {
+  font-family: "lcalf";
+}
+.menu_lddp {
+  font-family: "lddp";
+}
+.menu_lpdg {
+  font-family: "lpdg";
 }
 
 /*# sourceMappingURL=style.css.map */

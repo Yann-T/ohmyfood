@@ -75,6 +75,7 @@ ul li{
 /*Classe intégrant un mixin pour la mise en page interne des previews des menus*/
 .preview{
     @include preview;
+    font-size: 2rem;
 
 }
 
@@ -103,7 +104,18 @@ ul li{
 
         @include background ($color: #fcdfdb);
         font-family: 'lne';
-        font-size: 2rem;
     };
+
+    &_lcalf{
+        font-family: 'lcalf';
+    };
+
+    &_lddp{
+        font-family: 'lddp';
+    };
+
+    &_lpdg{
+        font-family: 'lpdg';
+    }
 }
 
