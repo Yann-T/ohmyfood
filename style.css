@@ -140,19 +140,27 @@ ul li {
 .menu_lne {
   background: #fcdfdb;
   font-family: "lne";
-  font-size: 1.7em;
+  text-align: center;
+  color: black;
+  font-size: 1.8em;
 }
 .menu_lcalf {
   font-family: "lcalf";
-  font-size: 1.2em;
+  text-align: center;
+  color: black;
+  font-size: 1.3em;
 }
 .menu_lddp {
   font-family: "lddp";
-  font-size: 1.6em;
+  text-align: center;
+  color: black;
+  font-size: 1.9em;
 }
 .menu_lpdg {
   font-family: "lpdg";
-  font-size: 1.2em;
+  text-align: center;
+  color: black;
+  font-size: 1.5em;
 }
 
 /*# sourceMappingURL=style.css.map */

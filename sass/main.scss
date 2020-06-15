@@ -105,22 +105,22 @@ ul li{
 
         @include background ($color: #fcdfdb);
         font-family: 'lne';
-        font-size: 1.7em;
+        @include text ($color: black, $font-size: 1.8em);
     };
 
     &_lcalf{
         font-family: 'lcalf';
-        font-size: 1.2em;
+        @include text ($color: black, $font-size: 1.3em);
     };
 
     &_lddp{
         font-family: 'lddp';
-        font-size: 1.6em;
+        @include text ($color: black, $font-size: 1.9em)
     };
 
     &_lpdg{
         font-family: 'lpdg';
-        font-size: 1.2em;
+        @include text ($color: black, $font-size: 1.5em)
     }
 }
 
