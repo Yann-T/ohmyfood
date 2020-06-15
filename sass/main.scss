@@ -19,7 +19,8 @@ body{
 }
 
 header{
-    font-size: 3.5em;
+    padding: 1% 0;
+    @include text($color: $color-secondary, $font-size: 3.5em);
 }
 
 /*Position fixe du footer et ajout de marge pour une meilleure visibilité sur la page*/
@@ -47,7 +48,7 @@ footer{
 /*Mixin pour centrer si besoin et changer la couleur du texte (couleur secondaire)*/
 .text--yellow{
     
-    @include text--yellow
+    @include text($color: $color-secondary, $font-size: 1.5em);
 }
 
 /*Retrait des puces des listes*/
@@ -75,7 +76,7 @@ ul li{
 /*Classe intégrant un mixin pour la mise en page interne des previews des menus*/
 .preview{
     @include preview;
-    font-size: 2rem;
+    @include box_shadow;
 
 }
 
@@ -104,18 +105,22 @@ ul li{
 
         @include background ($color: #fcdfdb);
         font-family: 'lne';
+        font-size: 1.7em;
     };
 
     &_lcalf{
         font-family: 'lcalf';
+        font-size: 1.2em;
     };
 
     &_lddp{
         font-family: 'lddp';
+        font-size: 1.6em;
     };
 
     &_lpdg{
         font-family: 'lpdg';
+        font-size: 1.2em;
     }
 }
 

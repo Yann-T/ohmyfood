@@ -2,9 +2,10 @@
     background: $color;
 }
 
-@mixin text--yellow($color: $color-secondary){
+@mixin text($color: $color-secondary, $font-size){
     text-align: center;
-    color: $color-secondary;
+    color: $color;
+    font-size: $font-size;
 }
 
 @mixin border_round{
@@ -17,7 +18,7 @@
     margin-bottom: 150px;
     margin-left: auto;
     margin-right: auto;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     font-weight: bold;
 
 }
@@ -25,7 +26,6 @@
 
 @mixin text--bold{
     font-weight: bold;
-    font-size: 1.3rem;
     text-decoration: none;
 }
 
@@ -35,16 +35,15 @@
     flex-wrap: wrap;
     justify-content: center;
     align-content: center;
-    width: 60%;
+    width: 50%;
     height: 900px;
     margin: auto;
     padding: 5% 0;
 }
 
 @mixin preview {
-    border: solid 1px black;
     width: 35%;
-    height: 450px;
+    height: 480px;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -63,7 +62,12 @@
 @mixin mobile {
     @media screen and (max-width: 799px){
         display: flex;
-        flex-direction: column;
+        height: 35%;
+        font-size: 18px;
     }
 
+}
+
+@mixin box_shadow ($color: rgba($color-primary, 0.3)){
+    box-shadow: 0px 0px 2px $color, -0px -0px 2px $color;
 }

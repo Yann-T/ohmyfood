@@ -29,6 +29,9 @@ body {
 }
 
 header {
+  padding: 1% 0;
+  text-align: center;
+  color: #fcca46;
   font-size: 3.5em;
 }
 
@@ -60,6 +63,7 @@ footer {
 .text--yellow {
   text-align: center;
   color: #fcca46;
+  font-size: 1.5em;
 }
 
 /*Retrait des puces des listes*/
@@ -70,7 +74,6 @@ ul li {
 /*Classe intégrant un Mixin de retrait des décorations de texte et augmentation (1.3 rem) de la taille de la police*/
 .bold {
   font-weight: bold;
-  font-size: 1.3rem;
   text-decoration: none;
 }
 
@@ -81,7 +84,7 @@ ul li {
   margin-bottom: 150px;
   margin-left: auto;
   margin-right: auto;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   font-weight: bold;
   border-radius: 5px;
 }
@@ -93,7 +96,7 @@ ul li {
   flex-wrap: wrap;
   justify-content: center;
   align-content: center;
-  width: 60%;
+  width: 50%;
   height: 900px;
   margin: auto;
   padding: 5% 0;
@@ -101,21 +104,21 @@ ul li {
 @media screen and (max-width: 799px) {
   .skeleton {
     display: flex;
-    flex-direction: column;
+    height: 35%;
+    font-size: 18px;
   }
 }
 
 /*Classe intégrant un mixin pour la mise en page interne des previews des menus*/
 .preview {
-  border: solid 1px black;
   width: 35%;
-  height: 450px;
+  height: 480px;
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 2% 3%;
-  font-size: 2rem;
+  box-shadow: 0px 0px 2px rgba(86, 156, 135, 0.3), 0px 0px 2px rgba(86, 156, 135, 0.3);
 }
 
 /*Classe modifiant l'affichage des menus et des headers sur chaque page*/
@@ -137,15 +140,19 @@ ul li {
 .menu_lne {
   background: #fcdfdb;
   font-family: "lne";
+  font-size: 1.7em;
 }
 .menu_lcalf {
   font-family: "lcalf";
+  font-size: 1.2em;
 }
 .menu_lddp {
   font-family: "lddp";
+  font-size: 1.6em;
 }
 .menu_lpdg {
   font-family: "lpdg";
+  font-size: 1.2em;
 }
 
 /*# sourceMappingURL=style.css.map */
