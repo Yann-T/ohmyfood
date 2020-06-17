@@ -77,6 +77,12 @@ ul li{
 .preview{
     @include preview;
     @include box_shadow;
+    transform: scale(1);
+    transition: transform 500ms;
+
+    &:hover{
+        transform: scale(1.15);
+    }
 
 }
 
@@ -121,6 +127,6 @@ ul li{
     &_lpdg{
         font-family: 'lpdg';
         @include text ($color: black, $font-size: 1.5em)
-    }
+    };
 }
 
