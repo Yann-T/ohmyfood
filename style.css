@@ -120,10 +120,12 @@ ul li {
   margin: 2% 3%;
   box-shadow: 0px 0px 2px rgba(86, 156, 135, 0.3), 0px 0px 2px rgba(86, 156, 135, 0.3);
   transform: scale(1);
-  transition: transform 500ms;
+  transition: all 500ms ease-out;
+  opacity: 1;
 }
 .preview:hover {
   transform: scale(1.15);
+  opacity: 0.5;
 }
 
 /*Classe modifiant l'affichage des menus et des headers sur chaque page*/
