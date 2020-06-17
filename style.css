@@ -23,6 +23,10 @@
   margin: 0;
 }
 
+#header {
+  background-color: white;
+}
+
 body {
   width: 100%;
   margin: auto;
