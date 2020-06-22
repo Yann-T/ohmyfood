@@ -61,8 +61,8 @@ ul li{
 }
 
 /*Classe intégrant un Mixin de retrait des décorations de texte et augmentation (1.3 rem) de la taille de la police*/
-.bold{
-    @include text--bold;
+.cleanse{
+    @include cleanse;
 }
 
 /*Classe intégrant un mixin pour la mise en page du bouton prochainement et un mixin pour arrondir les bords*/
@@ -75,22 +75,28 @@ ul li{
 .skeleton{
     @include skeleton;
     @include mobile;
+    
 }
 
 /*Classe intégrant un mixin pour la mise en page interne des previews des menus*/
 .preview{
     @include preview;
     @include box_shadow;
-    transform: scale(1);
-    transition: all 500ms ease-out;
-    opacity: 1;
 
+    
 
-    &:hover{
+    &:hover .inflate{
         transform: scale(1.15);
         opacity: 0.5;
+        transition: all 500ms ease-out;
     }
 
+    
+}
+
+.inflate{
+    transform: scale(1);
+    opacity: 1;
 }
 
 /*Classe modifiant l'affichage des menus et des headers sur chaque page*/
