@@ -77,3 +77,14 @@
     height: $dot_size;
     width: $dot_size;
 }
+
+@mixin color_gradient($color_start, $color_end){
+    
+    background:-moz-linear-gradient(to right bottom, $color_start, $color_end);
+    background: linear-gradient(to right bottom, $color_start, $color_end);
+    background: -webkit-linear-gradient(to right bottom, $color_start, $color_end);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color:transparent;
+}

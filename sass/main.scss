@@ -148,3 +148,27 @@ ul li{
     @include dot;
     display: inline-block;
 }
+
+.gradient{
+
+
+    &_lne{
+
+        @include color_gradient($color_start:#e14574 0%, $color_end: #f6b232 100%);
+
+    }
+
+    &_lcalf{
+        @include color_gradient($color_start:#cb7323 0%, $color_end: #8446f9 100%);
+
+    }
+
+    &_lddp{
+        @include color_gradient($color_start: #232BCB 0%, $color_end: #4675F9 100%)
+    }
+
+    &_lpdg{
+        @include color_gradient($color_start: #237406 0%, $color_end: #CDFFCB 100%)
+    }
+    
+}

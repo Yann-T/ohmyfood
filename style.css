@@ -182,10 +182,43 @@ ul li {
   height: 7px;
   width: 7px;
   display: inline-block;
-  transition: translate ease-in-out 220ms;
 }
-.moving_dot:active {
-  transition: translateY(0, 5px);
+
+.gradient_lne {
+  background: -moz-linear-gradient(to right, #e14574 0%, #f6b232 100%);
+  background: linear-gradient(to right, #e14574 0%, #f6b232 100%);
+  background: -webkit-linear-gradient(to right, #e14574 0%, #f6b232 100%);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.gradient_lcalf {
+  background: -moz-linear-gradient(to right, #cb7323 0%, #8446f9 100%);
+  background: linear-gradient(to right, #cb7323 0%, #8446f9 100%);
+  background: -webkit-linear-gradient(to right, #cb7323 0%, #8446f9 100%);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.gradient_lddp {
+  background: -moz-linear-gradient(to right, #232BCB 0%, #4675F9 100%);
+  background: linear-gradient(to right, #232BCB 0%, #4675F9 100%);
+  background: -webkit-linear-gradient(to right, #232BCB 0%, #4675F9 100%);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.gradient_lpdg {
+  background: -moz-linear-gradient(to right, #237406 0%, #CDFFCB 100%);
+  background: linear-gradient(to right, #237406 0%, #CDFFCB 100%);
+  background: -webkit-linear-gradient(to right, #237406 0%, #CDFFCB 100%);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 /*# sourceMappingURL=style.css.map */
