@@ -143,3 +143,8 @@ ul li{
     };
 }
 
+
+.moving_dot{
+    @include dot;
+    display: inline-block;
+}
