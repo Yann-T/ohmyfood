@@ -68,7 +68,7 @@
 }
 
 @mixin box_shadow ($color: rgba($color-primary, 0.3)){
-    box-shadow: 0px 0px 2px $color, -0px -0px 2px $color;
+    box-shadow: 0px 0px 3px $color, -0px -0px 3px $color;
 }
 
 @mixin dot{

@@ -121,7 +121,7 @@ ul li {
   justify-content: center;
   align-items: center;
   margin: 2% 3%;
-  box-shadow: 0px 0px 2px rgba(86, 156, 135, 0.3), 0px 0px 2px rgba(86, 156, 135, 0.3);
+  box-shadow: 0px 0px 3px rgba(86, 156, 135, 0.3), 0px 0px 3px rgba(86, 156, 135, 0.3);
 }
 .preview:hover .inflate {
   transform: scale(1.15);
@@ -185,36 +185,36 @@ ul li {
 }
 
 .gradient_lne {
-  background: -moz-linear-gradient(to right, #e14574 0%, #f6b232 100%);
-  background: linear-gradient(to right, #e14574 0%, #f6b232 100%);
-  background: -webkit-linear-gradient(to right, #e14574 0%, #f6b232 100%);
+  background: -moz-linear-gradient(to right bottom, #e14574 0%, #f6b232 100%);
+  background: linear-gradient(to right bottom, #e14574 0%, #f6b232 100%);
+  background: -webkit-linear-gradient(to right bottom, #e14574 0%, #f6b232 100%);
   -webkit-background-clip: text;
   -moz-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .gradient_lcalf {
-  background: -moz-linear-gradient(to right, #cb7323 0%, #8446f9 100%);
-  background: linear-gradient(to right, #cb7323 0%, #8446f9 100%);
-  background: -webkit-linear-gradient(to right, #cb7323 0%, #8446f9 100%);
+  background: -moz-linear-gradient(to right bottom, #cb7323 0%, #8446f9 100%);
+  background: linear-gradient(to right bottom, #cb7323 0%, #8446f9 100%);
+  background: -webkit-linear-gradient(to right bottom, #cb7323 0%, #8446f9 100%);
   -webkit-background-clip: text;
   -moz-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .gradient_lddp {
-  background: -moz-linear-gradient(to right, #232BCB 0%, #4675F9 100%);
-  background: linear-gradient(to right, #232BCB 0%, #4675F9 100%);
-  background: -webkit-linear-gradient(to right, #232BCB 0%, #4675F9 100%);
+  background: -moz-linear-gradient(to right bottom, #232BCB 0%, #4675F9 100%);
+  background: linear-gradient(to right bottom, #232BCB 0%, #4675F9 100%);
+  background: -webkit-linear-gradient(to right bottom, #232BCB 0%, #4675F9 100%);
   -webkit-background-clip: text;
   -moz-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .gradient_lpdg {
-  background: -moz-linear-gradient(to right, #237406 0%, #CDFFCB 100%);
-  background: linear-gradient(to right, #237406 0%, #CDFFCB 100%);
-  background: -webkit-linear-gradient(to right, #237406 0%, #CDFFCB 100%);
+  background: -moz-linear-gradient(to right bottom, #237406 0%, #CDFFCB 100%);
+  background: linear-gradient(to right bottom, #237406 0%, #CDFFCB 100%);
+  background: -webkit-linear-gradient(to right bottom, #237406 0%, #CDFFCB 100%);
   -webkit-background-clip: text;
   -moz-background-clip: text;
   background-clip: text;
