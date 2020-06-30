@@ -7,13 +7,15 @@
 /*Import des polices*/
 @import "../vendors/_fonts.scss";
 
+/*Import des keyframes*/
+@import "../components/components.scss";
 
 /*Retrait de marge interne à la page*/
 *{
     margin: 0;
 }
 
-#header{
+#white_bg{
     background-color: white;
 }
 
@@ -78,7 +80,7 @@ ul li{
     
 }
 
-/*Classe intégrant un mixin pour la mise en page interne des previews des menus*/
+/*Classe intégrant un mixin pour la mise en page interne des previews des menus et ses animations*/
 .preview{
     @include preview;
     @include box_shadow;
@@ -129,25 +131,22 @@ ul li{
 
     &_lcalf{
         font-family: 'lcalf';
-        @include text ($color: black, $font-size: 1.3em);
+        @include text ($color: #cb7323, $font-size: 1.3em);
+        @include background ($color: #fff1ff);
     };
 
     &_lddp{
         font-family: 'lddp';
-        @include text ($color: black, $font-size: 1.9em)
+        @include text ($color: lighten(#4675F9, 5), $font-size: 1.9em);
+        @include background ($color: #f4fff8);
     };
 
     &_lpdg{
         font-family: 'lpdg';
-        @include text ($color: black, $font-size: 1.5em)
+        @include text ($color: lighten(#237406, 10), $font-size: 1.5em);
     };
 }
 
-
-.moving_dot{
-    @include dot;
-    display: inline-block;
-}
 
 .gradient{
 
@@ -171,4 +170,41 @@ ul li{
         @include color_gradient($color_start: #237406 0%, $color_end: #CDFFCB 100%)
     }
     
+}
+
+/* Animations */ 
+
+.moving_dot_l{
+    @include dot;
+    display: inline-block;
+    animation: moving_dot 1.2s ease-in;
+    animation-iteration-count: infinite;
+    animation-delay: 1.2s;
+}
+
+.moving_dot_m{
+    @include dot;
+    display: inline-block;
+    animation: moving_dot 1.2s ease-in;
+    animation-iteration-count: infinite;
+    animation-delay: 1.3s;
+}
+
+.moving_dot_r{
+    @include dot;
+    display: inline-block;
+    animation: moving_dot 1.2s ease-in;
+    animation-iteration-count: infinite;
+    animation-delay: 1.4s;
+}
+
+.wiggle{
+
+    
+
+    &:hover{
+        
+        animation: shake 150ms;
+        animation-iteration-count: infinite;
+    }
 }

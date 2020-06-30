@@ -18,12 +18,38 @@
   font-family: "lpdg";
   src: url("./vendors/Fonts/kalam-bold.ttf") format("truetype");
 }
+/*Import des keyframes*/
+@keyframes shake {
+  0% {
+    transform: translate(2px, 2px);
+  }
+  50% {
+    transform: translate(-2px, -2px);
+  }
+  100% {
+    transform: translate(2px, 2px);
+  }
+}
+@keyframes moving_dot {
+  0% {
+    transform: translateY(0px);
+  }
+  25% {
+    transform: translateY(-3px);
+  }
+  50% {
+    transform: translateY(-1px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
 /*Retrait de marge interne à la page*/
 * {
   margin: 0;
 }
 
-#header {
+#white_bg {
   background-color: white;
 }
 
@@ -112,7 +138,7 @@ ul li {
   }
 }
 
-/*Classe intégrant un mixin pour la mise en page interne des previews des menus*/
+/*Classe intégrant un mixin pour la mise en page interne des previews des menus et ses animations*/
 .preview {
   width: 35%;
   height: 480px;
@@ -160,28 +186,22 @@ ul li {
 .menu_lcalf {
   font-family: "lcalf";
   text-align: center;
-  color: black;
+  color: #cb7323;
   font-size: 1.3em;
+  background: #fff1ff;
 }
 .menu_lddp {
   font-family: "lddp";
   text-align: center;
-  color: black;
+  color: #5f87fa;
   font-size: 1.9em;
+  background: #f4fff8;
 }
 .menu_lpdg {
   font-family: "lpdg";
   text-align: center;
-  color: black;
+  color: #32a409;
   font-size: 1.5em;
-}
-
-.moving_dot {
-  background-color: #fcca46;
-  border-radius: 50%;
-  height: 7px;
-  width: 7px;
-  display: inline-block;
 }
 
 .gradient_lne {
@@ -219,6 +239,45 @@ ul li {
   -moz-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+/* Animations */
+.moving_dot_l {
+  background-color: #fcca46;
+  border-radius: 50%;
+  height: 7px;
+  width: 7px;
+  display: inline-block;
+  animation: moving_dot 1.2s ease-in;
+  animation-iteration-count: infinite;
+  animation-delay: 1.2s;
+}
+
+.moving_dot_m {
+  background-color: #fcca46;
+  border-radius: 50%;
+  height: 7px;
+  width: 7px;
+  display: inline-block;
+  animation: moving_dot 1.2s ease-in;
+  animation-iteration-count: infinite;
+  animation-delay: 1.3s;
+}
+
+.moving_dot_r {
+  background-color: #fcca46;
+  border-radius: 50%;
+  height: 7px;
+  width: 7px;
+  display: inline-block;
+  animation: moving_dot 1.2s ease-in;
+  animation-iteration-count: infinite;
+  animation-delay: 1.4s;
+}
+
+.wiggle:hover {
+  animation: shake 150ms;
+  animation-iteration-count: infinite;
 }
 
 /*# sourceMappingURL=style.css.map */
