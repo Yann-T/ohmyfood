@@ -4,7 +4,7 @@
 /*Import des polices*/
 @font-face {
   font-family: "lne";
-  src: url("./vendors/Fonts/devonshire-regular.ttf") format("truetype");
+  src: url("./vendors/Fonts/mvboli.ttf") format("truetype");
 }
 @font-face {
   font-family: "lcalf";
@@ -62,7 +62,7 @@ header {
   padding: 1% 0;
   text-align: center;
   color: #fcca46;
-  font-size: 3.5em;
+  font-size: 2.7em;
 }
 
 /*Position fixe du footer et ajout de marge pour une meilleure visibilité sur la page*/
@@ -169,8 +169,8 @@ ul li {
   flex-direction: column;
   align-items: center;
   margin: 5% auto;
-  width: 600px;
-  min-width: 600px;
+  width: 950px;
+  height: 1400px;
 }
 .menu_header {
   margin: 5% auto;
@@ -181,7 +181,7 @@ ul li {
   font-family: "lne";
   text-align: center;
   color: black;
-  font-size: 1.8em;
+  font-size: 1.5em;
 }
 .menu_lcalf {
   font-family: "lcalf";

@@ -26,7 +26,7 @@ body{
 
 header{
     padding: 1% 0;
-    @include text($color: $color-secondary, $font-size: 3.5em);
+    @include text($color: $color-secondary, $font-size: 2.7em);
 }
 
 /*Position fixe du footer et ajout de marge pour une meilleure visibilité sur la page*/
@@ -112,8 +112,8 @@ ul li{
         flex-direction: column;
         align-items: center;
         margin: 5% auto;
-        width: 600px;
-        min-width: 600px;
+        width: 950px;
+        height: 1400px;
     }; 
 
     &_header{
@@ -126,7 +126,7 @@ ul li{
 
         @include background ($color: #fcdfdb);
         font-family: 'lne';
-        @include text ($color: black, $font-size: 1.8em);
+        @include text ($color: black, $font-size: 1.5em);
     };
 
     &_lcalf{
